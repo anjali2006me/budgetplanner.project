@@ -9,6 +9,7 @@
 // The anon key is designed to be public; never paste the service_role key here.
 // ─────────────────────────────────────────────────────────────
 window.BW_CONFIG = {
-  SUPABASE_URL: '',       // e.g. 'https://abcdxyzcompany.supabase.co'
-  SUPABASE_ANON_KEY: ''   // e.g. 'eyJhbGciOiJIUzI1NiIsInR5cCI6...'
+  SUPABASE_URL: 'https://xdobhsftpjwaublknvul.supabase.co',       // e.g. 'https://abcdxyzcompany.supabase.co'
+  SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhkb2Joc2Z0cGp3YXVibGtudnVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4MTAwNzMsImV4cCI6MjEwNzM4NjA3M30.bu5elEtByW1MEbOBlEZ3mWDqrMOM9pPxFBlfAPkbwsI'   // e.g. 'eyJhbGciOiJIUzI1NiIsInR5cCI6...'
+ // e.g. 'eyJhbGciOiJIUzI1NiIsInR5cCI6...'
 };
