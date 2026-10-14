@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Transactions · BudgetWise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="transactions">
+<div class="layout">
+  <aside id="nav" class="sidebar"></aside>
+  <main class="main">
+    <header class="page-head">
+      <div><h1>Transactions</h1><p class="sub">Add, edit, filter and export your income and expenses</p></div>
+      <div class="head-actions">
+        <button class="btn" id="exportBtn">Export CSV</button>
+        <button class="btn primary" id="addBtn">+ Add transaction</button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <input class="input" id="q" type="search" placeholder="Search description…" aria-label="Search">
+      <select class="select" id="fType" aria-label="Type">
+        <option value="all">All types</option><option value="income">Income</option><option value="expense">Expense</option>
+      </select>
+      <select class="select" id="fCat" aria-label="Category"></select>
+      <select class="select" id="fMonth" aria-label="Month"></select>
+      <button class="btn ghost small" id="clearBtn">Clear filters</button>
+    </div>
+
+    <div class="card">
+      <p class="summary-line" id="summary"></p>
+      <div class="table-wrap" id="tableWrap"></div>
+    </div>
+  </main>
+</div>
+<script src="js/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+<script src="js/transactions.js"></script>
+</body>
+</html>

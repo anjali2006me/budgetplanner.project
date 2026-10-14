@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard · BudgetWise</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+<div class="layout">
+  <aside id="nav" class="sidebar"></aside>
+  <main class="main">
+    <header class="page-head">
+      <div><h1>Dashboard</h1><p class="sub" id="subtitle">Your money at a glance</p></div>
+      <div class="head-actions">
+        <select id="month" class="select" aria-label="Month"></select>
+        <a class="btn primary" href="transactions.html?add=1">+ Add transaction</a>
+      </div>
+    </header>
+
+    <section class="kpis" id="kpis" aria-label="Summary"></section>
+
+    <section class="grid two">
+      <div class="card"><h3>Spending by category</h3><div id="donut"></div></div>
+      <div class="card"><h3>Income vs expenses · last 6 months</h3><div id="bars"></div></div>
+    </section>
+
+    <section class="grid two">
+      <div class="card">
+        <div class="card-head"><h3>Budget health</h3><a href="budgets.html">Manage budgets</a></div>
+        <div id="budgetHealth"></div>
+      </div>
+      <div class="card">
+        <div class="card-head"><h3>Recent transactions</h3><a href="transactions.html">View all</a></div>
+        <div class="table-wrap" id="recent"></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="js/config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/data.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
